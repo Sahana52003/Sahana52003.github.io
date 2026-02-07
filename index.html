@@ -9,8 +9,13 @@
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 </head>
 <body style="background-color: black;">
+    <canvas id="sparkleCanvas"></canvas>
     <!--------Nav--bar-->
 <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
     <div class="container">
@@ -19,19 +24,24 @@
                 <!-- <img src="download (10).jpg" alt="Sahana N" class="brand-img"> -->
                 <span class="brand-name">Sahana N</span>
             </h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                    <a class="nav-link px-lg-4 rounded" href="#">Home</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">About</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">Experience</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">Skills</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">Projects</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">Contact Me</a>
+                    <a class="nav-link px-lg-4 rounded" href="#Home">Home</a>
+                    <a class="nav-link px-lg-4 rounded" href="#About">About</a>
+                    <a class="nav-link px-lg-4 rounded" href="#Experience">Experience</a>
+                    <a class="nav-link px-lg-4 rounded" href="#Skills">Skills</a>
+                    <a class="nav-link px-lg-4 rounded" href="#Summary">Summary</a>
+                    <a class="nav-link px-lg-4 rounded" href="#Projects">Projects</a>
+                    <a class="nav-link px-lg-4 rounded" href="#ContactMe">Contact Me</a>
         </div>
+       
     </div>
 </div>
 </nav>
@@ -39,7 +49,7 @@
 
 
 <!-- Home-page-section-->
-<section class="main py-5">
+<section class="main py-5" id="Home">
     <div class="container py-5">
         <div class="row align-items-center">
 
@@ -61,13 +71,13 @@
                 <h3 class="typing-wrap">And I'm a <span class="text"></span></h3>
 
                 <div class="icons mt-3 social-icons">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Sahana52003"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sahana-n-50949527b/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
 
                 <div class="hero-buttons mt-4">
-                    <input type="button" value="View Resume" class="btn btn-primary ms-3" onclick="window.open('SAHANA-N_Resume.pdf','_blank')">
+                    <input type="button" value="View Resume" class="btn btn-primary ms-3" onclick="window.open('Sahana_Resume.pdf','_blank')">
                     <input type="button" value="Download" class="btn btn-primary ms-4" onclick="downloadResume()">
 
                 </div>
@@ -81,12 +91,12 @@
 
     
  <!-- About- Section---->
-<section class="about">
+<section class="about" id="About">
     <div class="about-box">
 
         <!-- LEFT IMAGE -->
         <div class="about-img">
-            <img src="download (9).jpg" alt="About Me Image">
+            <img src="assets/ChatGPT Image Jan 22, 2026, 01_47_38 AM.png" alt="About Me Image">
         </div>
 
         <!-- RIGHT TEXT -->
@@ -103,40 +113,59 @@
                 version control and development workflow. I am eager to apply my skills to real-world projects and
                 continuously learn new technologies.
             </p>
-            <a href="#education" class="btn btn-primary">Know More</a>
+<button id="showEducationBtn" class="btn btn-primary">Know More</button>
+
+        </div>
+    </div>
+</section>
+<section class="education hidden-section" id="education">
+    <h2>Education</h2>
+    <div class="edu-container">
+        <div class="edu-box">
+            <h3>Bachelor’s Degree</h3>
+            <p><strong>College :</strong> Sri Siddhartha Institute of Technology , Tumkur</p>
+            <p><strong>CGPA :</strong> 8.81</p>
+            <p><strong>Year :</strong> 2021 – 2025</p>
+        </div>
+
+        <div class="edu-box">
+            <h3>Intermediate</h3>
+            <p><strong>College:</strong> Sri Byraveshwara Rural Composite PU College , Byrapalli</p>
+            <p><strong>Percentage :</strong> 95.6</p>
+            <p><strong>Year :</strong> 2021</p>
         </div>
     </div>
 </section>
 
 
+
 <!--Experience Section-->
-<section class="experience">
+<section class="experience" id="Experience">
     <div class="experience-box">
 
         <!-- LEFT IMAGE -->
         <div class="experience-img">
-            <img src="full-stack-developer-illustration-svg-download-png-3515696.webp" alt="Java Full Stack Experience">
+            <img src="assets/ChatGPT Image Jan 22, 2026, 01_44_49 AM.png" alt="Java Full Stack Experience">
         </div>
 
         <!-- RIGHT TEXT -->
         <div class="experience-text">
             <h2 class="heading-experience">Experience</h2>
             <h4 class="stack">Java Full Stack Development</h4>
-            <p>
-                I have completed comprehensive training in Java Full Stack Development at Xworkz, where I gained
-                hands-on experience in designing and
-                developing full-stack web applications. The training covered front-end technologies such as HTML, CSS,
-                Bootstrap, and JavaScript,
-                along with back-end development using Java, JDBC, Servlets, and MySQL.
-            </p>
-            <p>
-                During the program, I worked on real-time projects that helped me understand application workflows,
-                database design, and server-side logic.
-                I followed industry best practices, implemented MVC architecture, and used Git and GitHub for version
-                control.
-                This experience strengthened my problem-solving skills and prepared me to contribute effectively to
-                professional software development teams.
-            </p>
+        
+            <ul class="experience-points">
+                <li>Trained in Java Full Stack Development with hands-on experience in building end-to-end web applications.
+                </li>
+                <li>Developed responsive and interactive user interfaces using HTML, CSS, Bootstrap, and JavaScript.</li>
+                <li>Implemented server-side logic and business functionality using Java.</li>
+                <li>Worked with JDBC for database connectivity and CRUD operations.</li>
+                <li>Built web applications using Servlets, handling request–response flow and session management.</li>
+                <li>Designed and managed relational databases using MySQL, including joins and normalization.</li>
+                <li>Applied MVC architecture to create scalable, maintainable, and well-structured applications.</li>
+                <li>Followed industry best practices for coding standards, application flow, and error handling.</li>
+                <li>Used Git and GitHub for version control, collaboration, and project tracking.</li>
+               <!---- <li>Worked on real-time projects, gaining practical exposure to application workflows and SDLC.</li>-->
+            </ul>
         </div>
 
     </div>
@@ -151,40 +180,50 @@
         <p></p>
     </div>
 </section> -->
-<section class="skills">
+<section class="skills" id="Skills">
     <h2 class="heading-skill">Skills</h2>
 
-    <!-- Row 1: Left ➜ Right -->
-     <div class="marquee">
-    <marquee behavior="scroll" direction="right" scrollamount="6" class="marquee-row">
+    <div class="skills-icons">
         <i class="fa-brands fa-html5"></i>
         <i class="fa-brands fa-css3"></i>
         <i class="fa-brands fa-bootstrap"></i>
-    </marquee>
-
-    <!-- Row 2: Right ➜ Left -->
-    <marquee behavior="scroll" direction="left" scrollamount="6" class="marquee-row">
         <i class="fa-brands fa-js"></i>
         <i class="fa-brands fa-java"></i>
-    </marquee>
-
-    <!-- Row 3: Left ➜ Right -->
-    <marquee behavior="scroll" direction="right" scrollamount="6" class="marquee-row">
+        <i class="fa-solid fa-leaf" style="color: green;"></i>
         <i class="fa-solid fa-database"></i>
-    </marquee>
-
-    <!-- Row 4: Right ➜ Left -->
-    <marquee behavior="scroll" direction="left" scrollamount="6" class="marquee-row">
-    <i class="fa-brands fa-git-alt"></i> 
-    <i class="fa-brands fa-github"></i> 
-    <i class="fa-solid fa-code"></i>
-    </marquee>
-</div>
+        <i class="fa-brands fa-git-alt"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-solid fa-code"></i>
+    </div>
 </section>
+
+<!--Technical Summary-->
+<div class="technical-summary" id="Summary">
+    <h2>Technical Summary</h2>
+    <ul>
+        <li>Proficient Java Full Stack Developer with hands-on experience in designing and developing real-world web applications.
+        Skilled in building responsive and user-friendly interfaces using HTML, CSS, Bootstrap, and JavaScript, with a strong
+        focus on usability and clean UI design.
+        
+        <li>On the backend, well-versed in Core Java, including object-oriented programming, exception handling, collections, and
+        multithreading. Experienced in JDBC for database connectivity and performing CRUD operations, as well as developing
+        server-side applications using Servlets, handling request–response flow, session management, and form validation.</li>
+        
+        <li>Experienced in developing structured applications using Spring MVC, with knowledge of controller-service-DAO layers,
+        model binding, and MVC architecture for scalable and maintainable solutions. Skilled in MySQL, including database
+        design, normalization, joins, subqueries, and writing optimized SQL queries.</li>
+        
+        <li>Familiar with Git and GitHub for version control, following clean coding practices, understanding project workflows, and
+        contributing to full-stack application development in line with industry standards. use this in html code and aslo make
+        these points use all no need to change</li>
+    </ul>
+</div>
+
+
 
 
 <!--Projects Section-->
-<section class="projects" id="projects">
+<section class="projects" id="Projects">
     <h2 class="section-title">Projects</h2>
 
     <div class="projects-container">
@@ -214,6 +253,7 @@
         </div>
 
         <!-- Project 2 -->
+        
         <div class="project-card">
             <img src="download (10).jpg" alt="Epileptic Seizure Detection Project">
             <div class="project-content">
@@ -231,33 +271,82 @@
                     <span>Scikit-learn</span>
                 </p>
 
-                <div class="project-links">
-                    <a href="#" target="_blank">GitHub</a>
-                </div>
+                <!-- <div class="project-links">
+                    <a href="https://github.com/Sahana52003/EEG---project" target="_blank">GitHub</a>
+                </div> -->
             </div>
         </div>
 
     </div>
+    
 </section>
 
 
-<!--Contact Section-->
-<div class="contact-container">
-    <div class="gradient-border">
-        <div class="section-text">
-            <h2>Contact Me</h2>
+<!-- Contact Section -->
+<section id="ContactMe" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Contact Me</h2>
 
-            <input type="text" placeholder="First Name"><br><br>
-            <input type="text" placeholder="Last Name"><br><br>
-            <input type="email" placeholder="Email-id"><br><br>
-            <input type="tel" placeholder="Mobile Number"><br><br>
+        <div class="row shadow-lg rounded-4 overflow-hidden">
 
-            <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea><br><br>
+            <!-- LEFT INFO -->
+            <div class="col-md-4 contact-info p-4 text-white">
+                <h4 class="fw-bold mb-3"><u>Let's get in touch</u></h4>
+                <p><p>
+                    Let’s connect! Whether it’s an opportunity, project, or quick discussion,
+                    I’d love to hear from you.
+                </p>
+</p>
 
-            <button type="submit">Message Me</button>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3">
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        Bengaluru, Karnataka, India
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-brands fa-github me-2"></i>
+                        github.com/Sahana52003
+                    </li>
+                </ul>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="col-md-8 p-5 bg-dark text-white">
+                <h4 class="text-center mb-4 fw-bold text-gradient">Get in Touch</h4>
+
+                <form onsubmit="sendEmail(); return false;">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" id="firstname" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Message</label>
+                        <textarea id="message" rows="4" class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" id="sendBtn" class="btn btn-gradient w-100">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
         </div>
     </div>
-</div>
+</section>
+
 
 
 
@@ -271,15 +360,17 @@
     </p>
 
     <div class="footer-icons">
-        <a href="#" class="icon-box github"><i class="fa-brands fa-github"></i></a>
-        <a href="#" class="icon-box linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" class="icon-box email"><i class="fa fa-envelope"></i></a>
+        <a href="https://github.com/Sahana52003" class="icon-box github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sahana-n-50949527b/" class="icon-box linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="javascript:void(0)" class="icon-box email" onclick="openGmail()">
+       <i class="fa fa-envelope"></i>
+    </a>
         <a href="#" class="icon-box instagram"><i class="fa-brands fa-instagram"></i></a>
     </div>
 </footer>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></scrip> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
     var typed = new Typed(".text", {
@@ -291,6 +382,16 @@
     });
 </script> -->
 
-    <script src="scritp.js/script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init("6AgXv6C903fI2ftu2");
+</script>
+
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
