@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black;">
+    <!--------Nav--bar-->
+<nav class="navbar navbar-expand-lg fixed-top text-uppercase">
+    <div class="container">
+        
+            <h1 class="navbar-brand font-weight-bold">
+                <!-- <img src="download (10).jpg" alt="Sahana N" class="brand-img"> -->
+                <span class="brand-name">Sahana N</span>
+            </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                    <a class="nav-link px-lg-4 rounded" href="#">Home</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">About</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Experience</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Skills</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Projects</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Contact Me</a>
+        </div>
+    </div>
+</div>
+</nav>
+
+
+
+<!-- Home-page-section-->
+<section class="main py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+
+            <!-- LEFT IMAGE -->
+        <div class="col-lg-5 col-md-6 text-center">
+            <div class="img-wrapper">
+               
+                <div class="img-box">
+                    <img src="assets/WhatsApp Image 2025-10-24 at 22.04.41 (3).jpeg" alt="Sahana N" class="profile-img">
+                </div>
+            </div>
+        </div>
+
+
+            <!-- RIGHT TEXT -->
+            <div class="col-lg-7 col-md-6 text-content">
+                <h3>Hello, I'm</h3>
+                <h1>Sahana N</h1>
+                <h3 class="typing-wrap">And I'm a <span class="text"></span></h3>
+
+                <div class="icons mt-3 social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+
+                <div class="hero-buttons mt-4">
+                    <input type="button" value="View Resume" class="btn btn-primary ms-3" onclick="window.open('SAHANA-N_Resume.pdf','_blank')">
+                    <input type="button" value="Download" class="btn btn-primary ms-4" onclick="downloadResume()">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    
+ <!-- About- Section---->
+<section class="about">
+    <div class="about-box">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-img">
+            <img src="download (9).jpg" alt="About Me Image">
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="about-text">
+            <h2 class="about-me">About Me</h2>
+            <p>
+                I am a passionate Java Full Stack Developer trained at Xworkz. I have hands-on experience in building
+                full-stack web applications using HTML, CSS, Bootstrap, JavaScript for front-end and Java, JDBC,
+                Servlets, MySQL for back-end development. I enjoy creating efficient, responsive, and scalable web
+                applications.
+            </p>
+            <p>
+                During my training, I also gained experience with tools like Git, GitHub, IntelliJ IDEA, and VS Code for
+                version control and development workflow. I am eager to apply my skills to real-world projects and
+                continuously learn new technologies.
+            </p>
+            <a href="#education" class="btn btn-primary">Know More</a>
+        </div>
+    </div>
+</section>
+
+
+<!--Experience Section-->
+<section class="experience">
+    <div class="experience-box">
+
+        <!-- LEFT IMAGE -->
+        <div class="experience-img">
+            <img src="full-stack-developer-illustration-svg-download-png-3515696.webp" alt="Java Full Stack Experience">
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="experience-text">
+            <h2 class="heading-experience">Experience</h2>
+            <h4 class="stack">Java Full Stack Development</h4>
+            <p>
+                I have completed comprehensive training in Java Full Stack Development at Xworkz, where I gained
+                hands-on experience in designing and
+                developing full-stack web applications. The training covered front-end technologies such as HTML, CSS,
+                Bootstrap, and JavaScript,
+                along with back-end development using Java, JDBC, Servlets, and MySQL.
+            </p>
+            <p>
+                During the program, I worked on real-time projects that helped me understand application workflows,
+                database design, and server-side logic.
+                I followed industry best practices, implemented MVC architecture, and used Git and GitHub for version
+                control.
+                This experience strengthened my problem-solving skills and prepared me to contribute effectively to
+                professional software development teams.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!--Skills Page Section-->
+<!-- <section class="skills">
+    <div class="skills-text">
+        <h2>Skills</h2>
+        <h4>Web Developement</h4>
+        <p></p>
+    </div>
+</section> -->
+<section class="skills">
+    <h2 class="heading-skill">Skills</h2>
+
+    <!-- Row 1: Left ➜ Right -->
+     <div class="marquee">
+    <marquee behavior="scroll" direction="right" scrollamount="6" class="marquee-row">
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+    </marquee>
+
+    <!-- Row 2: Right ➜ Left -->
+    <marquee behavior="scroll" direction="left" scrollamount="6" class="marquee-row">
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-java"></i>
+    </marquee>
+
+    <!-- Row 3: Left ➜ Right -->
+    <marquee behavior="scroll" direction="right" scrollamount="6" class="marquee-row">
+        <i class="fa-solid fa-database"></i>
+    </marquee>
+
+    <!-- Row 4: Right ➜ Left -->
+    <marquee behavior="scroll" direction="left" scrollamount="6" class="marquee-row">
+    <i class="fa-brands fa-git-alt"></i> 
+    <i class="fa-brands fa-github"></i> 
+    <i class="fa-solid fa-code"></i>
+    </marquee>
+</div>
+</section>
+
+
+<!--Projects Section-->
+<section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="assets/original-7ab8005d2481c8a285edfc1462f84ddc.webp" alt="Screen Time Analysis Project">
+            <div class="project-content">
+                <h3>Screen Time Analysis Using Python</h3>
+                <p>
+                    A data analysis project that analyzes daily screen usage patterns
+                    using Python. The project visualizes screen time trends, identifies
+                    usage behavior, and provides insights using graphs and statistics.
+                </p>
+
+                <p class="tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                </p>
+
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="download (10).jpg" alt="Epileptic Seizure Detection Project">
+            <div class="project-content">
+                <h3>Epileptic Seizure Detection in EEG Signals</h3>
+                <p>
+                    A machine learning-based system that detects epileptic seizures
+                    from EEG signals. The project involves signal preprocessing,
+                    feature extraction, and classification using ML algorithms.
+                </p>
+
+                <p class="tech">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                </p>
+
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!--Contact Section-->
+<div class="contact-container">
+    <div class="gradient-border">
+        <div class="section-text">
+            <h2>Contact Me</h2>
+
+            <input type="text" placeholder="First Name"><br><br>
+            <input type="text" placeholder="Last Name"><br><br>
+            <input type="email" placeholder="Email-id"><br><br>
+            <input type="tel" placeholder="Mobile Number"><br><br>
+
+            <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea><br><br>
+
+            <button type="submit">Message Me</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+<!--Footer Section-->
+<hr>
+<footer class="footer">
+    <p class="footer-text">
+        &copy; Designed by Sahana N | All Rights Reserved
+    </p>
+
+    <div class="footer-icons">
+        <a href="#" class="icon-box github"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="icon-box linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="icon-box email"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="icon-box instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".text", {
+        strings: ["Frontend Developer", "Full Stack Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1000,
+        loop: true
+    });
+</script> -->
+
+    <script src="scritp.js/script.js"></script>
+</body>
+</html>
